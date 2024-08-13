@@ -7,6 +7,8 @@
 5. 執行整併圖檔為 pdf 文件的程式
 6. 記得還書
 
+NOTE: 大推 [Andrew Chen](https://www.facebook.com/profile.php?id=100062564447786) 寫的搜尋系統。為什麼這個很重要呢？因為你在 A 圖書館如果需要排順位，可以馬上跳去別的 BCD 圖書館看看有沒有同一本書。
+
 ## 環境設定
 
 * 安裝 Python3
