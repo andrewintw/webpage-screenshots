@@ -1,7 +1,7 @@
 import os
 from PIL import Image
 from reportlab.pdfgen import canvas
-from reportlab.lib.pagesizes import letter  # 使用 letter 頁面大小，或可選擇其他尺寸
+from reportlab.lib.pagesizes import letter, A3, A4, landscape  # 頁面大小，或可選擇其他尺寸
 
 def convert_images_to_pdf(image_folder, output_pdf):
     # 獲取所有的 PNG 文件
@@ -9,8 +9,13 @@ def convert_images_to_pdf(image_folder, output_pdf):
     images.sort()  # 根據文件名排序，確保按順序合併
 
     # 創建 PDF 文件
-    c = canvas.Canvas(output_pdf, pagesize=letter)
-    pdf_width, pdf_height = letter
+    c = canvas.Canvas(output_pdf, pagesize=A4)
+    pdf_width, pdf_height = A4
+
+    # 使用橫向的 A3 尺寸
+    # c = canvas.Canvas(output_pdf, pagesize=landscape(A3))
+    # pdf_width, pdf_height = landscape(A3)
+
 
     for i, img in enumerate(images, start=1):
         img_path = os.path.join(image_folder, img)
