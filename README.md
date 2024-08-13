@@ -1,4 +1,3 @@
-
 ## 流程說明
 
 1. 建議先用 [台灣圖書館電子書搜尋](https://taiwanlibrarysearch.herokuapp.com/) 搜尋你想要看的電子書。
@@ -7,6 +6,11 @@
 4. 執行截圖程式，截圖程式會自動翻頁並截圖
 5. 執行整併圖檔為 pdf 文件的程式
 6. 記得還書
+
+## 環境設定
+
+* 安裝 Python3
+* 以 pip 安裝模組 - `pip install pyautogui Pillow reportlab`
 
 
 ## 1. 進入線上閱讀的畫面
